@@ -10,8 +10,8 @@ import datetime
 import requests
 from github import Github, GithubException
 
-START_COMMENT = '<!--START_SECTION:waka-->'
-END_COMMENT = '<!--END_SECTION:waka-->'
+START_COMMENT = '<!--START_SECTION:stats-->'
+END_COMMENT = '<!--END_SECTION:stats-->'
 GRAPH_LENGTH = 25
 listReg = f"{START_COMMENT}[\\s\\S]+{END_COMMENT}"
 
