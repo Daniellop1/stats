@@ -1,0 +1,41 @@
+name: "Waka - Readme"
+author: Daniel Lopez
+description: "Add stats to your README file"
+
+inputs:
+  GH_TOKEN:
+    description: "GitHub access token with Repo scope"
+    required: true
+    default: ${{ github.token }}
+
+  WAKATIME_API_KEY:
+    description: "Your Wakatime API Key"
+    required: true
+
+  REPOSITORY:
+    description: "Your GitHub repository"
+    default: ${{ github.repository }}
+    required: false
+
+  SHOW_TITLE:
+    description: "Displays the week number and days in Readme as title"
+    default: false
+    required: false
+
+  COMMIT_MESSAGE:
+    description: "Add a commit message of your choice"
+    default: "Updated the Graph with new Metrics"
+    required: false
+
+  BLOCKS:
+    description: "Add the progress blocks of your choice"
+    default: "░▒▓█"
+    required: false
+
+runs:
+  using: "docker"
+  image: "Dockerfile"
+
+branding:
+  icon: "info"
+  color: "blue"
