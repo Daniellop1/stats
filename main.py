@@ -1,7 +1,3 @@
-'''
-WakaTime progress visualizer
-'''
-
 import re
 import os
 import base64
