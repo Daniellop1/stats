@@ -55,7 +55,7 @@ def get_stats() -> str:
         pad = len(max([l['name'] for l in lang_data[:5]], key=len))
     except ValueError:
         print("The Data seems to be empty. Please wait for a day for the data to be filled in.")
-        return '```text\nNo Activity tracked this Week\n```'
+        return 'text\nNo Activity tracked this Week\n'
     for lang in lang_data[:5]:
         if lang['hours'] == 0 and lang['minutes'] == 0:
             continue
@@ -69,10 +69,10 @@ def get_stats() -> str:
     data = '\n'.join(data_list)
     if show_title == 'true':
         print("Stats with Weeks in Title Generated")
-        return '\n'+this_week()+'\n\n'+data+'\n```'
+        return '\n'+this_week()+'\n\n'+data+'\n'
     else:
         print("Usual Stats Generated")
-        return '\n'+data+'\n```'
+        return '\n'+data+'\n'
 
 
 def decode_readme(data: str) -> str:
