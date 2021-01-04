@@ -41,5 +41,5 @@ jobs:
 
 
 
-###Legal
+### Legal
 The original creator of this action is athul (https://github.com/athul) and its repository is (https://github.com/athul/waka-readme), this action is customized for me because the original gave me problems. Copyright claims -> contact@2005danielus.ml
